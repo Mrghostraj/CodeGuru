@@ -17,7 +17,7 @@ The project combines **CodeLlama**, **Ollama**, **Python**, and **Gradio** to cr
 
 The CodeGuru interface provides a simple workspace where users can choose a coding mode and programming language and interact with the local AI assistant.
 
-![CodeGuru UI](assets/screenshots/codeguru-ui.png)
+![CodeGuru UI](UI.png)
 
 ---
 
@@ -25,7 +25,7 @@ The CodeGuru interface provides a simple workspace where users can choose a codi
 
 In Generate Mode, users describe what they want to build, select a programming language, and CodeGuru generates the requested solution.
 
-![CodeGuru Generate Mode](assets/screenshots/generate-mode.png)
+![CodeGuru Generate Mode](generate.png)
 
 **Example workflow:**
 
@@ -49,7 +49,7 @@ Explanation + Complexity + Edge Cases
 
 In Debug / Review Mode, users can submit their own code. CodeGuru analyzes the implementation, identifies issues, explains them, provides corrected code, and can include test cases and complexity analysis.
 
-![CodeGuru Debug Mode](assets/screenshots/debug-mode.png)
+![CodeGuru Debug Mode](debug.png)
 
 **Example workflow:**
 

@@ -17,7 +17,7 @@ The project combines **CodeLlama**, **Ollama**, **Python**, and **Gradio** to cr
 
 The CodeGuru interface provides a simple workspace where users can choose a coding mode and programming language and interact with the local AI assistant.
 
-![CodeGuru UI](UI.png)
+![CodeGuru UI](assets/UI.png)
 
 ---
 
@@ -25,7 +25,7 @@ The CodeGuru interface provides a simple workspace where users can choose a codi
 
 In Generate Mode, users describe what they want to build, select a programming language, and CodeGuru generates the requested solution.
 
-![CodeGuru Generate Mode](generate.png)
+![CodeGuru Generate Mode](assets/generate.png)
 
 **Example workflow:**
 
@@ -49,7 +49,7 @@ Explanation + Complexity + Edge Cases
 
 In Debug / Review Mode, users can submit their own code. CodeGuru analyzes the implementation, identifies issues, explains them, provides corrected code, and can include test cases and complexity analysis.
 
-![CodeGuru Debug Mode](debug.png)
+![CodeGuru Debug Mode](assets/debug.png)
 
 **Example workflow:**
 
@@ -436,10 +436,9 @@ CodeGuru/
 ├── .gitignore
 │
 └── assets/
-    └── screenshots/
-        ├── codeguru-ui.png
-        ├── generate-mode.png
-        └── debug-mode.png
+       ├── codeguru-ui.png
+       ├── generate-mode.png
+       └── debug-mode.png
 ```
 
 ### File Description
@@ -451,7 +450,7 @@ CodeGuru/
 | `requirements.txt` | Python dependencies |
 | `README.md` | Project documentation |
 | `.gitignore` | Files excluded from Git |
-| `assets/screenshots/` | Project screenshots |
+| `assets/` | Project screenshots |
 
 ---
 
@@ -1157,86 +1156,6 @@ cache/
 gradio_cached_examples/
 ```
 
----
-
-# 📤 Push CodeGuru to GitHub
-
-Initialize Git:
-
-```bash
-git init
-```
-
-Check the files:
-
-```bash
-git status
-```
-
-Add everything:
-
-```bash
-git add .
-```
-
-Create the first commit:
-
-```bash
-git commit -m "Initial CodeGuru implementation"
-```
-
-Add your GitHub repository:
-
-```bash
-git remote add origin https://github.com/YOUR_USERNAME/CodeGuru.git
-```
-
-Rename the branch:
-
-```bash
-git branch -M main
-```
-
-Push:
-
-```bash
-git push -u origin main
-```
-
----
-
-# ⚠️ What Should NOT Be Uploaded?
-
-Do **not** upload the actual CodeLlama model files to GitHub.
-
-Avoid committing:
-
-```text
-*.gguf
-*.bin
-models/
-cache/
-.venv/
-.conda/
-.env
-```
-
-The repository should contain the source code and model configuration.
-
-A new user can download the model separately:
-
-```bash
-ollama pull codellama:7b
-```
-
-and recreate CodeGuru:
-
-```bash
-ollama create codeguru -f Modelfile
-```
-
----
-
 # 🔁 Complete Setup From Scratch
 
 For someone setting up CodeGuru on a new machine:
@@ -1380,7 +1299,7 @@ The long-term goal is to evolve CodeGuru from a local coding assistant into a co
 The repository includes three screenshots demonstrating the current V1 application:
 
 ```text
-assets/screenshots/
+assets/
 │
 ├── codeguru-ui.png
 ├── generate-mode.png
